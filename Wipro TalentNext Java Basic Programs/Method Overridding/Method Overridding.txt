@@ -1,0 +1,75 @@
+class Fruits
+{
+    private String name;
+    private String taste;
+    public String size;
+    
+    Fruits(String FN,String FT,String FS)
+    {
+        this.name = FN;
+        this.taste = FT;
+        this.size = FS;
+    }
+    public void display()
+    {
+        System.out.println("name of the Fruit: "+name);
+        System.out.println("taste of the Fruit: "+taste);
+        
+    }
+    void eat()
+    {
+        System.out.println("All Fruits are healthier to Eat");
+    }
+}
+
+class Apple extends Fruits
+{
+    Apple(String size)
+    {
+       super("Apple","Sweet",size);
+    }
+    public void display()
+    {
+        super.display();
+        System.out.println("size of the Fruit: "+size);
+    }
+  
+  
+  void eat()
+  {
+      
+      System.out.println("Eating apple a day makes you away from Doctor");
+  }
+}
+class Orange extends Fruits
+{
+    Orange(String size)
+    {
+      super("Orange","Sour",size); 
+    }
+    public void display()
+    {
+        super.display();
+        System.out.println("Size of the orange : " +size);
+    }
+  
+  void eat()
+  {
+      System.out.println("Eating orange  gives you vitamin C");
+  }    
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Apple a = new Apple("Large");
+        Orange o  = new Orange("Medium");
+        
+        a.display();
+        a.eat();
+        
+        o.display();
+        o.eat();
+        
+    }
+}

@@ -1,0 +1,24 @@
+import java.util.*;
+class Evenodd
+{
+    void evenodd(int n)
+    {
+      if(n%2 == 1)
+      {
+          System.out.println("You Have Entered Odd Number :"+n);
+      }
+    else 
+        {
+            System.out.println("You Have Entered even Number :"+n);
+        }
+    }
+    public static void main(String[] args)
+    {
+        Evenodd eo = new Evenodd();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Any  Interger Value: ");
+        int n1 = sc.nextInt();
+        eo.evenodd(n1);
+        
+    }
+}

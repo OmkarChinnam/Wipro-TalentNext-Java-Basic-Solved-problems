@@ -1,0 +1,54 @@
+class Person {
+    private String Name;
+
+    Person(String NP) {
+        this.Name = NP;
+    }
+
+    public String getName() {
+        return Name;
+    }
+}
+
+class Employee extends Person {
+    private double annualsalary;
+    private String yearofwork;
+    private String insurancenumber;
+    
+    Employee(double AS, String YOW, String IN) {
+        super("");
+        this.annualsalary = AS;
+        this.yearofwork = YOW;
+        this.insurancenumber = IN;
+    }
+
+    Employee(String NP, double AS, String YOW, String IN) {
+        super(NP);
+        this.annualsalary = AS;
+        this.yearofwork = YOW;
+        this.insurancenumber = IN;
+    }
+
+    public double getAnnualsalary() {
+        return annualsalary;
+    }
+
+    public String getYearofwork() {
+        return yearofwork;
+    }
+
+    public String getInsurancenumber() {
+        return insurancenumber;
+    }
+}
+
+public class TestEmployee {
+    public static void main(String[] args) {
+        Person p = new Person("omkar");
+        Employee e = new Employee(1000000, "01-01-2024", "stu0007584");
+        System.out.println("Employee NAME: " + p.getName());
+        System.out.println("Employee Annual Salary: " + e.getAnnualsalary());
+        System.out.println("Employee Year of Work: " + e.getYearofwork());
+        System.out.println("Employee Insurance Number: " + e.getInsurancenumber());
+    }
+}

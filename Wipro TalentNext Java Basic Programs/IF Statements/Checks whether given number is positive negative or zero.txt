@@ -1,0 +1,29 @@
+import java.util.*;
+class Posnegze
+{
+    void posnegze(int n)
+    {
+      if(n>0)
+      {
+          System.out.println("You Have Enterd An Positive Integer :"+n);
+      }
+   
+        else if(n<0)
+        {
+            System.out.println("You Have Entered an Negative Integer :"+n);
+        }
+        else 
+        {
+            System.out.println("You Have Entered zero  :"+n);
+        }
+    }
+    public static void main(String[] args)
+    {
+        Posnegze pnz = new Posnegze();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Any Interger : ");
+        int n = sc.nextInt();
+        pnz.posnegze(n);
+        
+    }
+}

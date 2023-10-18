@@ -1,0 +1,40 @@
+class Animal
+{
+    Animal()
+    {
+        this.eat();
+        this.sleep();
+    }
+    void eat(){
+        System.out.println("All Animals eat");
+    }
+    void sleep(){
+        System.out.println("All animals sleep");
+    }
+    
+}
+class Bird extends Animal
+{
+    Bird()
+    {
+        this.eat();
+        this.sleep();
+        this.fly();
+    }
+    void eat(){
+        System.out.println("brids eat variety of food");
+    }
+    void sleep(){
+        System.out.println("owl is a bird that doesnot sleep during night");
+    }
+    void fly(){
+        System.out.println("peacock canot fly at greater height");
+    }
+}
+public class Main 
+{
+    public static void main (String[] args) {
+        Animal a= new Animal();
+        Bird b= new Bird();
+    }
+}

@@ -1,0 +1,27 @@
+import java.util.*;
+class Alphabets
+{
+  void alphaorder(char ch, char ch1)
+  {
+    if (ch < ch1)
+    {
+    System.out.println(ch+","+ch1);
+    }
+    else  
+    {
+    System.out.println(ch1+","+ch);
+    }
+  }
+}
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter any two Alphabets: ");
+        char ch = sc.next().charAt(0);
+        char ch1 = sc.next().charAt(0);
+        Alphabets a = new Alphabets();
+        a.alphaorder(ch,ch1);
+        
+    }
+}

@@ -1,0 +1,48 @@
+import java.util.*;
+class Genders
+{
+    public void male(String Gender,int Age)
+    {
+      if (Gender.equals("male"))
+       {
+        if (Age >= 1 && Age <=58)
+          {
+            System.out.println("The Percentage of intrest is 8.4%");  
+          }
+          else if (Age >=59 && Age <=100)
+          {
+            System.out.println("The Percentage of intrest is 10.5%");  
+          }
+      }
+    }
+        
+    
+    
+    void female(String Gender,int Age)
+    {
+       if (Gender.equals("female"))
+       {
+        if (Age >= 1 && Age <= 58)
+           {
+            System.out.println("The Percentage of intrest is 8.2%");  
+           }
+           else if (Age >= 59 && Age <= 100)
+           {
+            System.out.println("The Percentage of intrest is 9.2%");  
+           }
+       }
+    }
+}
+class Main
+{
+ public static void main(String[] args)
+ {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter your Gender and Age : ");
+    String Gender = sc.nextLine();
+    int Age = sc.nextInt();
+    Genders g = new Genders();
+    g.male(Gender,Age);
+    g.female(Gender,Age);
+ }
+}

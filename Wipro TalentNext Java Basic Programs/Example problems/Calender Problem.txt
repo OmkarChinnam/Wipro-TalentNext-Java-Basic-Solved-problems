@@ -1,0 +1,18 @@
+import java.util.*;
+class Calander
+{
+    public static void main(String []args)
+    {
+    int days;
+    int months;
+    int years;
+    System.out.println("Enter no of days");
+    Scanner sc = new Scanner(System.in);
+    int tdays = sc.nextInt();
+    years = tdays/365;
+    int rem = tdays%365;
+    months = rem/30;
+    days = rem%30;
+    System.out.println(years+" Years"+" and "+months+" Months "+days +"Days");
+    }
+}

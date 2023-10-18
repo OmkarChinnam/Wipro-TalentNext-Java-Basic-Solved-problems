@@ -1,0 +1,19 @@
+class Calculator
+{
+    static void powerInt(int num1,int num2)
+    {
+        System.out.println((int)Math.pow(num1,num2));
+        
+    }
+    static void powerDouble(double num1,int num2)
+    {
+        System.out.println(Math.pow(num1,num2));
+    }
+    public static void main(String[] args)
+    {
+        powerInt(5,3);
+        powerDouble(7,3);
+    }
+    
+    
+}

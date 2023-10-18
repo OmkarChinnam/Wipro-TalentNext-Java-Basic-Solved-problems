@@ -1,0 +1,25 @@
+import java.util.*;
+class Truefalse
+{
+    void truefalse(int n1,int n2)
+    {
+      if(n1%10 == n2%10)
+      {
+          System.out.println("TRUE");
+      }
+    else 
+        {
+            System.out.println("FALSE");
+        }
+    }
+    public static void main(String[] args)
+    {
+        Truefalse tf = new Truefalse();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Any Two Interger Values: ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        tf.truefalse(n1,n2);
+        
+    }
+}
